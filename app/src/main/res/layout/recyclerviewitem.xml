@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="4dp"
+    app:ignore="NamespaceTypo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+                android:id="@+id/numberPicker_horizontal"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                app:snp_buttonIconLeft="@drawable/ic_left"
+                app:snp_buttonIconRight="@drawable/ic_right"
+                app:snp_maxValue="100"
+                app:snp_minValue="2"
+                app:snp_orientation="horizontal"
+                app:snp_stepSize="1"
+                app:snp_updateInterval="1"
+                app:snp_value="1"
+                app:snp_valueMarginEnd="0dp"
+                app:snp_valueMarginStart="0dp" />
+
+            <Button
+                android:id="@+id/button_updateQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="update quantity"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove" />
+
+        </TableRow>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

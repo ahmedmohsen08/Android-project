@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ahmedmohsen.project.MainPageActivity"
+    tools:showIn="@layout/app_bar_main_page">
+
+    <EditText
+        android:id="@+id/editText_searchfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <Button
+        android:id="@+id/button_searchbytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="51dp"
+        android:layout_y="59dp"
+        android:text="search"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <ImageButton
+        android:id="@+id/button_searchbyvoice"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_x="196dp"
+        android:layout_y="57dp"
+        app:srcCompat="@android:drawable/ic_btn_speak_now"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <ListView
+        android:id="@+id/listview_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="127dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+</AbsoluteLayout>

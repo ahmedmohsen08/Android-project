@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/button_addtocart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="144dp"
+        android:layout_y="393dp"
+        android:text="add to cart"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <TextView
+        android:id="@+id/textView_item_details"
+        android:layout_width="158dp"
+        android:layout_height="56dp"
+        android:layout_x="121dp"
+        android:layout_y="79dp"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <TextView
+        android:id="@+id/textView_itemprice"
+        android:layout_width="133dp"
+        android:layout_height="44dp"
+        android:layout_x="139dp"
+        android:layout_y="177dp"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="15dp"
+        android:layout_y="49dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.michaelmuenzer.android.scrollablennumberpicker.ScrollableNumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="78dp"
+            android:layout_height="139dp"
+            app:snp_buttonIconDown="@drawable/ic_down"
+            app:snp_buttonIconUp="@drawable/ic_up"
+            app:snp_maxValue="100"
+            app:snp_minValue="1"
+            app:snp_orientation="vertical"
+            app:snp_stepSize="1"
+            app:snp_updateInterval="1"
+            app:snp_value="1"
+            app:snp_valueMarginEnd="0dp"
+            app:snp_valueMarginStart="0dp" />
+    </LinearLayout>
+</AbsoluteLayout>

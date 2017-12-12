@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="electronics">
+        <menu>
+            <item
+                android:id="@+id/nav_elec_mobile"
+                android:title="mobile phones" />
+            <item
+                android:id="@+id/nav_elec_laptop"
+                android:title="Laptops" />
+        </menu>
+    </item>
+    <item android:title="clothes and fashion" >
+        <menu>
+            <item
+                android:id="@+id/nav_cloth_men"
+                android:title="men" />
+            <item
+                android:id="@+id/nav_cloth_women"
+                android:title="women" />
+        </menu>
+    </item>
+
+</menu>

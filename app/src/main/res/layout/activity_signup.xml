@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahmedmohsen.project.SignupActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="144dp"
+                android:layout_y="22dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="74dp" />
+
+            <EditText
+                android:id="@+id/editText_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="144dp"
+                android:layout_y="77dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <EditText
+                android:id="@+id/editText_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="146dp"
+                android:layout_y="188dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="239dp" />
+
+            <EditText
+                android:id="@+id/editText_repassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="148dp"
+                android:layout_y="239dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="301dp" />
+
+            <EditText
+                android:id="@+id/editText_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="148dp"
+                android:layout_y="289dp"
+                android:ems="10"
+                android:hint="job"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="350dp" />
+
+            <TextView
+                android:id="@+id/textView_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="33dp"
+                android:layout_y="40dp"
+                android:text="email"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="60dp" />
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="37dp"
+                android:layout_y="91dp"
+                android:text="name"
+                tools:layout_editor_absoluteX="51dp"
+                tools:layout_editor_absoluteY="6dp" />
+
+            <TextView
+                android:id="@+id/textView_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="29dp"
+                android:layout_y="200dp"
+                android:text="password"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/textView_repassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="10dp"
+                android:layout_y="252dp"
+                android:text="retype password"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="286dp" />
+
+            <TextView
+                android:id="@+id/textView_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="34dp"
+                android:layout_y="305dp"
+                android:text="job"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="1dp" />
+
+            <Button
+                android:id="@+id/button_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="139dp"
+                android:layout_y="491dp"
+                android:text="signup"
+                tools:layout_editor_absoluteX="134dp"
+                tools:layout_editor_absoluteY="433dp" />
+
+            <EditText
+                android:id="@+id/editText_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="146dp"
+                android:layout_y="130dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/textView_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="30dp"
+                android:layout_y="140dp"
+                android:text="user name"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="30dp" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup_gender"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:layout_x="144dp"
+                android:layout_y="350dp"
+                tools:layout_editor_absoluteX="84dp"
+                tools:layout_editor_absoluteY="20dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="male" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="female" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="42dp"
+                android:layout_y="363dp"
+                android:text="gender"
+                tools:layout_editor_absoluteX="23dp"
+                tools:layout_editor_absoluteY="358dp" />
+
+            <EditText
+                android:id="@+id/editText_birthday"
+                android:layout_width="218dp"
+                android:layout_height="wrap_content"
+                android:layout_x="144dp"
+                android:layout_y="428dp"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="birthdate" />
+
+            <TextView
+                android:id="@+id/textView_birthdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="47dp"
+                android:layout_y="437dp"
+                android:text="birthdate"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="423dp" />
+        </AbsoluteLayout>
+    </ScrollView>
+
+</AbsoluteLayout>
